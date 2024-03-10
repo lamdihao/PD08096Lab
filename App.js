@@ -36,6 +36,21 @@ const App = () => {
         options={{ title: "Lab 3" }}
       />
       <Stack.Screen
+        name="Lab4"
+        component={Lab4Screen}
+        options={{ title: "Lab 4" }}
+      />
+      <Stack.Screen
+        name="Lab5"
+        component={Lab5Screen}
+        options={{ title: "Lab 5" }}
+      />
+       <Stack.Screen
+        name="Lab6"
+        component={Lab6Screen}
+        options={{ title: "Lab 6" }}
+      />
+      <Stack.Screen
         name="bai1lap1"
         component={Bai1}
         options={{ title: "Bài 1 Lab 1" }}
@@ -77,7 +92,25 @@ return (
     >
       <Text style={styles.menuText}>Lab 3</Text>
     </TouchableOpacity>
-    {/* Thêm các mục menu cho các lab khác tại đây */}
+    <TouchableOpacity
+      style={styles.labMenuItem}
+      onPress={() => navigation.navigate("Lab4")}
+    >
+      <Text style={styles.menuText}>Lab 4</Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      style={styles.labMenuItem}
+      onPress={() => navigation.navigate("Lab5")}
+    >
+      <Text style={styles.menuText}>Lab 5</Text>
+    </TouchableOpacity>
+    <TouchableOpacity
+      style={styles.labMenuItem}
+      onPress={() => navigation.navigate("Lab6")}
+    >
+      <Text style={styles.menuText}>Lab 6</Text>
+    </TouchableOpacity>
+    
   </View>
 );
 };
@@ -97,6 +130,27 @@ return (
   </View>
 );
 };
+const Lab4Screen = () => {
+  return (
+    <View style={styles.labScreenContainer}>
+      <Text style={styles.screenText}>Lab 4 Screen</Text>
+    </View>
+  );
+  };
+  const Lab5Screen = () => {
+    return (
+      <View style={styles.labScreenContainer}>
+        <Text style={styles.screenText}>Lab 5 Screen</Text>
+      </View>
+    );
+    };
+    const Lab6Screen = () => {
+      return (
+        <View style={styles.labScreenContainer}>
+          <Text style={styles.screenText}>Lab 6 Screen</Text>
+        </View>
+      );
+      };
 
 // Thêm các màn hình cho các lab khác tại đây
 
