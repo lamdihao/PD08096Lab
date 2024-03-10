@@ -13,7 +13,7 @@ const eventInfo = [
     car: "Xe bus",
     time2: "21 : 00 - 22 : 00",
     image:
-      "https://www.chudu24.com/wp-content/uploads/2017/01/du-lich-ho-tram-7-1.jpg",
+      "https://i.pinimg.com/originals/80/99/e3/8099e3e9da2f909b33c84bf182d2ae1c.jpg",
   },
 ];
 
