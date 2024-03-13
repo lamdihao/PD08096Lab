@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   container: {
     padding: 10,
     backgroundColor: "#ffffff",
-    marginBottom: 10,
+    marginTop: -10,
     borderRadius: 20,
   },
   title: {
@@ -55,14 +55,14 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   cardTitle: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: "bold",
     marginTop: 2,
     marginBottom: 16,
   },
   image: {
     width: "100%",
-    height: 200,
+    height: 250,
     marginTop: 10,
     marginBottom: 10,
   },

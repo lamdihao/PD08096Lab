@@ -13,7 +13,7 @@ const eventInfo = [
     car: "Xe bus",
     time2: "21 : 00 - 22 : 00",
     image:
-      "https://i.pinimg.com/originals/80/99/e3/8099e3e9da2f909b33c84bf182d2ae1c.jpg",
+      "https://img.thuthuatphanmem.vn/uploads/2018/10/03/anh-bo-bien-dep-va-tho-mong_111548093.jpg",
   },
 ];
 
@@ -36,5 +36,7 @@ const Bai2 = () => {
 export default Bai2;
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    fontSize: 100,
+  },
 });
