@@ -9,11 +9,22 @@ const Lab1Screen = ({ navigation }) => {
       <View style={styles.menuContainer}>
         <TouchableOpacity
           style={styles.menuItem}
-          onPress={() => navigation.navigate("bai1")}
+          onPress={() => navigation.navigate("bai1lab3")}
         >
           <Text style={styles.menuText}>Bài 1</Text>
         </TouchableOpacity>
-       
+        <TouchableOpacity
+          style={styles.menuItem}
+          onPress={() => navigation.navigate("bai2lab3")}
+        >
+          <Text style={styles.menuText}>Bài 2</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.menuItem}
+          onPress={() => navigation.navigate("bai3lab3")}
+        >
+          <Text style={styles.menuText}>Bài 3</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

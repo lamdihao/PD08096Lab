@@ -10,6 +10,7 @@ import Bai2 from "./src/lab/lab1/bai2";
 import Bai3Lab1 from './src/lab/lab1/bai3/index';
 import Counter from "./src/lab/lab2/Counter";
 import Lab2Screen from "./src/lab/lab2/lab2_home";
+import Lab3Screen from "./src/lab/lab3/lab3_home";
 import CountDown from "./src/lab/lab2/CountDown";
 import CountMemo from "./src/lab/lab2/CountMemo";
 import ContentMemo from "./src/lab/lab2/ContentMemo";
@@ -17,6 +18,9 @@ import Count_useCallBack from "./src/lab/lab2/Count_useCallBack";
 import Product_useMemo from "./src/lab/lab2/Product_useMemo";
 import UseContextScreen from "./src/lab/lab2/Provider_useContext";
 import Main from "./src/lab/lab2/Main";
+import Lab3Bai1 from "./src/lab/lab3/bai1";
+import Lab3Bai2 from "./src/lab/lab3/bai2/app";
+import Bai3Lab3 from './src/lab/lab3/bai3/index';
 
 
 const Stack = createNativeStackNavigator();
@@ -73,7 +77,12 @@ const App = () => {
       <Stack.Screen
         name="bai3lab1"
         component={Bai3Lab1}
-        options={{ title: "Bai 3 Lab 1" }}
+        options={{ title: "Bài 2 Lab 1" }}
+      />
+      <Stack.Screen
+        name="bai1lab3"
+        component={Lab3Bai1}
+        options={{ title: "Lab3 Bai1" }}
       />
       <Stack.Screen
         name="main"
@@ -110,7 +119,16 @@ const App = () => {
         component={UseContextScreen}
         options={{ title: "UseContextScreen" }}
       />
-      
+      <Stack.Screen
+        name="bai2lab3"
+        component={Lab3Bai2}
+        options={{ title: "Lab3 Bai2" }}
+      />
+      <Stack.Screen
+        name="bai3lab3"
+        component={Bai3Lab3}
+        options={{ title: "Lab3 Bai3" }}
+      />
       
       {/* Thêm các màn hình cho các lab khác tại đây */}
     </Stack.Navigator>
@@ -164,13 +182,7 @@ return (
 
 
 
-const Lab3Screen = () => {
-return (
-  <View style={styles.labScreenContainer}>
-    <Text style={styles.screenText}>Lab 3 Screen</Text>
-  </View>
-);
-};
+
 const Lab4Screen = () => {
   return (
     <View style={styles.labScreenContainer}>
