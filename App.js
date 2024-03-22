@@ -11,6 +11,7 @@ import Bai3Lab1 from './src/lab/lab1/bai3/index';
 import Counter from "./src/lab/lab2/Counter";
 import Lab2Screen from "./src/lab/lab2/lab2_home";
 import Lab3Screen from "./src/lab/lab3/lab3_home";
+import Lab4Screen from "./src/lab/lab4/lab4_home";
 import CountDown from "./src/lab/lab2/CountDown";
 import CountMemo from "./src/lab/lab2/CountMemo";
 import ContentMemo from "./src/lab/lab2/ContentMemo";
@@ -21,6 +22,9 @@ import Main from "./src/lab/lab2/Main";
 import Lab3Bai1 from "./src/lab/lab3/bai1";
 import Lab3Bai2 from "./src/lab/lab3/bai2/app";
 import Bai3Lab3 from './src/lab/lab3/bai3/index';
+import ChupAnh from "./src/lab/lab4/cameraAccess";
+import ChonAnh from "./src/lab/lab4/chonAnh";
+import NgheNhac from "./src/lab/lab4/nghenhac";
 
 
 const Stack = createNativeStackNavigator();
@@ -129,6 +133,21 @@ const App = () => {
         component={Bai3Lab3}
         options={{ title: "Lab3 Bai3" }}
       />
+       <Stack.Screen
+        name="chupanh"
+        component={ChupAnh}
+        options={{ title: "Chup anh" }}
+      />
+      <Stack.Screen
+        name="chonanh"
+        component={ChonAnh}
+        options={{ title: "Chon anh" }}
+      />
+      <Stack.Screen
+        name="nghenhac"
+        component={NgheNhac}
+        options={{ title: "Nghe nhac" }}
+      />
       
       {/* Thêm các màn hình cho các lab khác tại đây */}
     </Stack.Navigator>
@@ -183,13 +202,7 @@ return (
 
 
 
-const Lab4Screen = () => {
-  return (
-    <View style={styles.labScreenContainer}>
-      <Text style={styles.screenText}>Lab 4 Screen</Text>
-    </View>
-  );
-  };
+
   const Lab5Screen = () => {
     return (
       <View style={styles.labScreenContainer}>
